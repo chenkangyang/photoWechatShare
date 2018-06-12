@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/main_bg"
+        tools:context=".MainActivity">
+
+    <Button
+            android:text="@string/takePic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/takePic"
+            android:background="@drawable/button_circle_shape"
+            android:textSize="18sp" android:lineSpacingExtra="8sp"
+            android:layout_marginEnd="19dp"
+            android:layout_alignBottom="@+id/img1" android:layout_alignEnd="@+id/takeGallery"/>
+    <Button
+            android:text="@string/takeGallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/takeGallery"
+            android:background="@drawable/button_circle_shape"
+            android:textSize="18sp" android:lineSpacingExtra="8sp"
+            android:textAllCaps="false" android:textAlignment="textStart"
+            android:layout_marginTop="96dp"
+            android:layout_alignParentTop="true" android:layout_alignParentEnd="true" android:layout_marginEnd="13dp"/>
+    <TextView
+            android:text="@string/main_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/main_title"
+            android:textSize="30sp" android:textAlignment="center" android:fontFamily="monospace"
+            android:textColor="?android:attr/textColorPrimaryInverseDisableOnly" android:textAllCaps="false"
+            android:layout_above="@+id/img1" android:layout_alignParentStart="true" android:layout_marginStart="11dp"/>
+    <ImageView
+            android:clickable="true"
+            android:longClickable="true"
+            android:layout_height="100dp"
+            android:id="@+id/img1"
+            android:layout_width="100dp"
+            android:layout_marginTop="58dp" android:layout_alignTop="@+id/takeGallery"
+            android:layout_alignEnd="@+id/main_title" android:layout_marginEnd="78dp"/>
+
+</RelativeLayout>

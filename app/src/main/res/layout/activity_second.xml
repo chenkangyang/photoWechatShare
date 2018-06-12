@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorSecond"
+        tools:context=".SecondActivity">
+
+    <ImageView
+            android:clickable="true"
+            android:layout_width="300dp"
+            android:layout_height="400dp"
+            android:id="@+id/img2" android:adjustViewBounds="false"
+            android:layout_marginTop="13dp"
+            android:layout_alignParentTop="true" android:layout_centerHorizontal="true"
+            android:contentDescription="@string/picSy"/>
+    <TextView
+            android:text="文件路径"
+            android:id="@+id/sy1"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:textColor="@android:color/background_light"
+            android:layout_above="@+id/sy2" android:layout_alignStart="@+id/img2"/>
+    <TextView
+            android:text="文件大小"
+            android:id="@+id/sy2"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:textColor="@android:color/background_light" android:layout_above="@+id/insertContent"
+            android:layout_alignStart="@+id/insertContent"/>
+    <Button
+            android:text="加入水印"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/insertContent"
+            android:layout_alignParentBottom="true" android:layout_alignStart="@+id/sy1"/>
+    <Button
+            android:text="完成编辑"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/finish"
+            android:layout_alignParentBottom="true" android:layout_alignEnd="@+id/img2"/>
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:srcCompat="@android:drawable/ic_menu_rotate"
+            android:layout_alignTop="@+id/insertContent" android:layout_centerHorizontal="true"
+            android:id="@+id/rotate"/>
+</RelativeLayout>

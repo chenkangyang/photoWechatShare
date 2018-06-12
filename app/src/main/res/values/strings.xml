@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Demo01</string>
+    <string name="main_title">为你的图片加上水印</string>
+    <string name="takeGallery">打 开 相 册</string>
+    <string name="takePic">拍     照</string>
+    <string name="picSy">将要被添加水印</string>
+</resources>
