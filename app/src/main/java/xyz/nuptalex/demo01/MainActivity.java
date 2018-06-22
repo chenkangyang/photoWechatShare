@@ -111,9 +111,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
             case R.id.takeGallery: {// 打开相册
                 // 打开本地相册
-                Intent i = new Intent(
-                        Intent.ACTION_PICK,
-                        android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+//                Intent i = new Intent(
+//                        Intent.ACTION_PICK,
+//                        android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+                Intent i = new Intent();
+                i.setType("image/*");
+                i.setAction(Intent.ACTION_GET_CONTENT);
                 // 设定结果返回
                 startActivityForResult(i, REQUEST_GAllERLY);
                 break;
